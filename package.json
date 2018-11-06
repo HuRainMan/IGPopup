@@ -1,6 +1,6 @@
 {
   "name": "igpopup",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "ig",
   "main": "dist/popup.common.js",
   "module": "dist/popup.esm.js",
