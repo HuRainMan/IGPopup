@@ -1,0 +1,44 @@
+
+.popup-boss .popup-container {
+  position: relative;
+  background-color: #fff;
+  transition: all 1s ease;
+}
+.popup-boss .center-class {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.popup-boss .bottom-class {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.popup-boss .top-class {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.popup-boss .left-class {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.popup-boss .right-class {
+  position: absolute;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+.popup-mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
