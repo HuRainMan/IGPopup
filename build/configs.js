@@ -35,7 +35,7 @@ module.exports = exports = [
     {
         input: resolve('popup/index.js'),
         output: {
-            file: resolve('dist/popup.common.js'),
+            file: resolve('dist/popup.cjs.js'),
             format: 'cjs',
         },
         plugins: [

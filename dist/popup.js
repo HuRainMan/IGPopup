@@ -67,10 +67,6 @@
                 },
             },
         },
-        data() {
-            return {
-            };
-        },
         mounted() {
             const arr = [ 'center', 'top', 'left', 'right', 'bottom', ];
             if (!arr.find(i => this.position === i)) throw new Error('[ popup ] popup的 position 必须是 center top left right bottom之一'); 
@@ -79,17 +75,17 @@
             beforeEnter(el) {
                 el.style.opacity = 0;
                 if (this.position !== 'center') {
-                    el.style.transition = `${this.position} 5s linear`;
+                    el.style.transition = `${this.position} 1s linear`;
                 } else {
                     el.style.transition = null;
                 }
             },
             enter(el, done) {
                 switch(this.position) {
-                    case 'left': el.style.left = - 20 *  el.offsetWidth + 'px'; break;
-                    case 'right': el.style.right = - 20 * el.offsetWidth + 'px'; break;
-                    case 'bottom': el.style.bottom = - 20 * el.offsetHeight + 'px'; break;
-                    case 'top': el.style.top = - 20 * el.offsetHeight + 'px'; break;
+                    case 'left': el.style.left = - 5 *  el.offsetWidth + 'px'; break;
+                    case 'right': el.style.right = - 5 * el.offsetWidth + 'px'; break;
+                    case 'bottom': el.style.bottom = - 5 * el.offsetHeight + 'px'; break;
+                    case 'top': el.style.top = - 5 * el.offsetHeight + 'px'; break;
                 }            if (this.position !== 'center') {
                     setTimeout(() => {
                         el.style.opacity = 1;
@@ -99,7 +95,7 @@
                             case 'bottom': el.style.bottom = 0; break;
                             case 'top': el.style.top = 0; break;
                         }                    done();
-                    }, 200);
+                    }, 100);
                 } else {
                     el.style.opacity = 1;
                 }
@@ -222,7 +218,7 @@
         const component = (typeof script$$1 === 'function' ? script$$1.options : script$$1) || {};
 
         // For security concerns, we use only base name in production mode.
-        component.__file = "C:\\Users\\ivygate\\Desktop\\popup\\popup\\popup.vue";
+        component.__file = "D:\\NPM\\popup\\popup\\popup.vue";
 
         if (!component.render) {
           component.render = template.render;
