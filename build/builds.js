@@ -12,7 +12,6 @@ function build (configs) {
             }
         }).catch(logError);
     }
-
     next();
 }
 
